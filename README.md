@@ -69,7 +69,7 @@ By merging exchange price data with social media sentiment data, this project ai
 3. Methods & Tooling
 
    
-     API Endpoints & Libraries:  
+   API Endpoints & Libraries:  
   
       -Kraken's API for near real-time and historical crypto price data. 
    
@@ -77,14 +77,14 @@ By merging exchange price data with social media sentiment data, this project ai
 
       -Twitter/X's API /Tweepy for streaming or batch retrieval of tweets.  
        
-     VADER for Sentiment:  
+    VADER for Sentiment:  
        
       -After collecting the text data (e.g., tweets, Reddit posts), each entry is passed through          VADER's sentiment analysis engine.  
       
       -The resulting sentiment scores (positive, negative, neutral, and compound) are stored alongside the timestamp and relevant cryptocurrency references.  
 
        
-     Scripts & Scheduling:  
+   Scripts & Scheduling:  
 
   
       -Custom Python scripts handle data ingestion, sentiment processing, and caching.  

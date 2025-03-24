@@ -62,25 +62,26 @@ By merging exchange price data with social media sentiment data, this project ai
 
    
      -Real-Time Retrieval: For continuous updates (e.g., every minute or every 5 minutes), Python scripts pull the latest market data from Kraken and new posts or tweets from Reddit and X, respectively.  
-     -Historical Data: Collected on a daily/hourly basis to build a robust dataset for backtesting, training, and validation.
+
+   -Historical Data: Collected on a daily/hourly basis to build a robust dataset for backtesting, training, and validation.
 
    
 3. Methods & Tooling
 
    
-  API Endpoints & Libraries:  
+     API Endpoints & Libraries:  
   
-   -Kraken's API for near real-time and historical crypto price data. 
+      -Kraken's API for near real-time and historical crypto price data. 
    
-   -Reddit's API/PRAW for subreddit posts, comments, and discussion threads.  
+      -Reddit's API/PRAW for subreddit posts, comments, and discussion threads.  
 
-   -Twitter/X's API /Tweepy for streaming or batch retrieval of tweets.  
+      -Twitter/X's API /Tweepy for streaming or batch retrieval of tweets.  
        
-  VADER for Sentiment:  
+     VADER for Sentiment:  
        
-   -After collecting the text data (e.g., tweets, Reddit posts), each entry is passed through       VADER's sentiment analysis engine.  
+      -After collecting the text data (e.g., tweets, Reddit posts), each entry is passed through          VADER's sentiment analysis engine.  
       
-   -The resulting sentiment scores (positive, negative, neutral, and compound) are stored alongside the timestamp and relevant cryptocurrency references.  
+      -The resulting sentiment scores (positive, negative, neutral, and compound) are stored alongside the timestamp and relevant cryptocurrency references.  
 
        
   Scripts & Scheduling:  

@@ -92,3 +92,29 @@ By merging exchange price data with social media sentiment data, this project ai
       -Cron jobs (or similar schedulers) run at fixed intervals to automate the data-fetching routine and ensure up-to-date information.  
 
 By systematically combining market data (OHLC) and sentiment scores (from VADER), the project maintains a dynamic and comprehensive view of the cryptocurrency landscape. This foundation enables both effective model training and real-time prediction for traders and investors.
+
+# Data Preprocessing
+
+
+**Data Cleaning**
+
+1. Missing or Duplicated Entries
+
+
+   -After retrieving both market (OHLC) and social media data, we check for missing values (e.g., null timestamps, missing prices) or duplicated records.
+
+   -Duplicates are dropped to avoid skewed counts in either the price or sentiment dataset. Missing values -if minimal- may be imputed (e.g., forward-fill for time series) or removed entirely if they exceed a threshold.
+
+2. Corrupted Rows & Timestamp Alignment
+
+   -Inconsistent or corrupted rows (e.g., malformed text posts, invalid price points) are either corrected or filtered out.
+
+   -We align market data and sentiment data based on timestamps, ensuring each sentiment score is associated with the nearest relevant trading interval. This may involve rounding or interpolating timestamps to the closest minute, hour, or day, depending on the analysis window.
+
+**Normalization & Transformation**
+
+1. Scaling Numerical Features
+
+      -Features like trading volume, price changes, or technical indicators can vary significantly in magnitude. We apply common scaling techniques such as StandardScaler (mean = 0, variance = 1) or MinMaxScaler (scaled to [0,1]) to normalize these features.
+
+      -Scaling helps certain machine learning algorithms converge faster and avoids bias towards high-magnitude variables.

@@ -21,14 +21,15 @@ More recent studies leverage machine learning and deep learning techniques—suc
 By combining both technical and sentiment-based features, our approach aims to address this gap, offering a more holistic view of the market. This could potentially reduce the risk of missing sudden trend shifts caused by social media events or announcements that purely technical models might overlook.
 
 **Sentiment Analysis in Finance**
+
 The rationale for using social media sentiment data lies in the growing recognition that market movements are not solely driven by technical factors but also by investor psychology. Platforms like Reddit, X (formerly Twitter), and other social channels can significantly influence short-term price actions, as large communities of traders often synchronize their decisions based on trending discussions or influential opinions.
 
 Several successful studies have illustrated the usefulness of sentiment-driven models for predicting stock price movements, with improvements in short-term accuracy when compared to models relying solely on historical prices. However, these results also highlight limitations:
 
-    Noise and Bot Activity: Social media data often contain spam or automated posts that can skew sentiment analysis.
+-Noise and Bot Activity: Social media data often contain spam or automated posts that can skew sentiment analysis.
 
-    Contextual Understanding: Simply labeling a post as positive or negative may not suffice if the context or sarcasm is missed by the sentiment engine.
+-Contextual Understanding: Simply labeling a post as positive or negative may not suffice if the context or sarcasm is missed by the sentiment engine.
 
-    Rapidly Evolving Language: Internet slang and meme-driven cultures (common in crypto communities) can require specialized NLP models.
+-Rapidly Evolving Language: Internet slang and meme-driven cultures (common in crypto communities) can require specialized NLP models.
 
 Despite these challenges, the potential benefits of integrating sentiment signals remain significant. As the cryptocurrency market is particularly susceptible to news cycles and collective online behaviors, robust sentiment analysis can capture market hype or fear before it’s fully reflected in price charts.

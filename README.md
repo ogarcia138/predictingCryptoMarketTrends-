@@ -70,30 +70,24 @@ By merging exchange price data with social media sentiment data, this project ai
    
   API Endpoints & Libraries:  
   
-       -Kraken's API for near real-time and historical crypto price data. 
+   -Kraken's API for near real-time and historical crypto price data. 
+   
+   -Reddit's API/PRAW for subreddit posts, comments, and discussion threads.  
 
+   -Twitter/X's API /Tweepy for streaming or batch retrieval of tweets.  
        
-       -Reddit's API/PRAW for subreddit posts, comments, and discussion threads.  
-
+  VADER for Sentiment:  
        
-       -Twitter/X's API /Tweepy for streaming or batch retrieval of tweets.  
-
-       
-        -VADER for Sentiment:  
-
-        
-       -After collecting the text data (e.g., tweets, Reddit posts), each entry is passed through       VADER's sentiment analysis engine.  
-
-       
-       -The resulting sentiment scores (positive, negative, neutral, and compound) are stored alongside the timestamp and relevant cryptocurrency references.  
+   -After collecting the text data (e.g., tweets, Reddit posts), each entry is passed through       VADER's sentiment analysis engine.  
+      
+   -The resulting sentiment scores (positive, negative, neutral, and compound) are stored alongside the timestamp and relevant cryptocurrency references.  
 
        
   Scripts & Scheduling:  
 
   
-    -Custom Python scripts handle data ingestion, sentiment processing, and caching.  
-
-    
-    -Cron jobs (or similar schedulers) run at fixed intervals to automate the data-fetching routine and ensure up-to-date information.  
+   -Custom Python scripts handle data ingestion, sentiment processing, and caching.  
+  
+   -Cron jobs (or similar schedulers) run at fixed intervals to automate the data-fetching routine and ensure up-to-date information.  
 
 By systematically combining market data (OHLC) and sentiment scores (from VADER), the project maintains a dynamic and comprehensive view of the cryptocurrency landscape. This foundation enables both effective model training and real-time prediction for traders and investors.

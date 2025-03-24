@@ -39,13 +39,20 @@ Despite these challenges, the potential benefits of integrating sentiment signal
 **Data Sources**
 This project integrates data from multiple sources to provide both historical and real-time context for cryptocurrency market movements:
 1. Cryptocurrency Exchanges
-   -Kraken: Primary sources for OHLC (Open, High, Low, Close) price data and trading volume.
-   -Potentially other exchanges (e.g., Coinbase, Binance) for broader coverage or alternative trading pairs
+   
+      -Kraken: Primary sources for OHLC (Open, High, Low, Close) price data and trading volume.
+      -Potentially other exchanges (e.g., Coinbase, Binance) for broader coverage or alternative trading    pairs
 2. Social Media Platforms
-   -Reddit: Data extracted from cryptocurrency-focused subreddits (e.g., r/CryptoCurrency) via the Reddit API or PRAW.
-   -X (formerly Twitter): Tweets mentioning specific cryptocurrencies or hashtags fetched via Twitter/X's API or libraries like Tweepy.
+   
+      -Reddit: Data extracted from cryptocurrency-focused subreddits (e.g., r/CryptoCurrency) via the       Reddit API or PRAW.
+
+      -X (formerly Twitter): Tweets mentioning specific cryptocurrencies or hashtags fetched via Twitter/X's API or libraries like Tweepy.
+
+   
 3. Sentiment Analysis Tool
-   -VADER: Used to perform sentiment scoring on the collected text data. Vader is particularly effective for short, social-media style text, providing scores for positive, negative, neutral, and an overall compound sentiment metric.
+
+   
+      -VADER: Used to perform sentiment scoring on the collected text data. Vader is particularly effective for short, social-media style text, providing scores for positive, negative, neutral, and an overall compound sentiment metric.
 
 By merging exchange price data with social media sentiment data, this project aims to capture both objective market signals and subjective investor mood, enabling more nuanced cryptocurrency price predictions.
 

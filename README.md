@@ -84,11 +84,11 @@ By merging exchange price data with social media sentiment data, this project ai
       -The resulting sentiment scores (positive, negative, neutral, and compound) are stored alongside the timestamp and relevant cryptocurrency references.  
 
        
-  Scripts & Scheduling:  
+     Scripts & Scheduling:  
 
   
-   -Custom Python scripts handle data ingestion, sentiment processing, and caching.  
+      -Custom Python scripts handle data ingestion, sentiment processing, and caching.  
   
-   -Cron jobs (or similar schedulers) run at fixed intervals to automate the data-fetching routine and ensure up-to-date information.  
+      -Cron jobs (or similar schedulers) run at fixed intervals to automate the data-fetching routine and ensure up-to-date information.  
 
 By systematically combining market data (OHLC) and sentiment scores (from VADER), the project maintains a dynamic and comprehensive view of the cryptocurrency landscape. This foundation enables both effective model training and real-time prediction for traders and investors.

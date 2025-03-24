@@ -11,7 +11,7 @@ This project leverages machine learning models to perform binary classification 
 **Problem Statement**  
 Cryptocurrency markets are highly volatile, making it challenging for traders and investors to make informed decisions. Fluctuations can occur rapidly due to market sentiment and external factors, often leading to significant financial risk. By combining machine learning techniques with social media sentiment analysis, this project seeks to address these challenges and support more confident, evidence-based trading strategies.
 
-#Literature Review
+# Literature Review
 Background on Cryptocurrency Forecasting
 
 Research on cryptocurrency price prediction has gained momentum in recent years, primarily due to the market’s rapid growth and volatility. Traditional methods often rely on time-series analysis (e.g., ARIMA, GARCH) or technical indicators (e.g., MACD, RSI) for trend forecasting. While these methods can capture historical patterns, they sometimes struggle to incorporate the real-time market sentiment that frequently drives short-term price fluctuations.

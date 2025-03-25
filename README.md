@@ -132,4 +132,15 @@ By systematically combining market data (OHLC) and sentiment scores (from VADER)
 
 1. From Raw Text to Sentiment Scores
 
-      -
+      -Each collected post or tweet is passed through a sentiment analysis tool, producing metrics such as positive, negative, neutral, or a compound sentiment score.
+
+      -We store these sentiment scores alongside the timestamp and any metadata (e.g., user, subreddit, or hashtags).
+
+2. Model & Libraries
+
+      -VADER (Valance Aware Dictionary and sEntiment Reasoner) is our primary tool for analyzing short social media text.
+
+      -We may optionally compare results from TextBlob or transformer-based models (e.g., BERT) to see if advanced NLP methods improve sentiment accuracy.
+
+
+By applying these cleaning, normalization, and sentiment-extraction steps, we create a consistent, high-quality dataset. This ensures our machine learning models can effectively learn patterns and generate reliable predictions for cryptocurrency price movements.

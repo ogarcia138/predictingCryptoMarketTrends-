@@ -118,3 +118,18 @@ By systematically combining market data (OHLC) and sentiment scores (from VADER)
       -Features like trading volume, price changes, or technical indicators can vary significantly in magnitude. We apply common scaling techniques such as StandardScaler (mean = 0, variance = 1) or MinMaxScaler (scaled to [0,1]) to normalize these features.
 
       -Scaling helps certain machine learning algorithms converge faster and avoids bias towards high-magnitude variables.
+
+2. Text Cleaning
+
+      -For social media posts, we remove URLs, punctutation, and other non-text characters.
+
+      -We convert all text to lowercase and optionally remove stop words (common words like "the", "and", etc.) to reduce noise.
+
+      -Depending on the model, more advanced cleaning (e.g., lemmatization or stemming) may be applied to group similar word forms.
+
+
+**Sentiment Extraction**
+
+1. From Raw Text to Sentiment Scores
+
+      -

@@ -186,3 +186,43 @@ By applying these cleaning, normalization, and sentiment-extraction steps, we cr
       -Recognizing outliers (e.g., extreme sentiment spikes or unusually high volume) can guide data cleaning or model weighting.
 
 By combining visual analyses with basic statistical checks, we gain a deeper understanding of our dataset's structure. These EDA findings often inform feature engineering choices and model selection, ensuring we capture the most relevant predictors of cryptocurrency price movements.
+
+# Feature Engineering
+
+**Technical Indicators**
+
+1. Indicator List
+
+      -MACD (Moving Average Convergence Divergence): Captures momentum by comparing short-term and long-term exponential moving averages (EMAs).
+
+      -RSI (Relative Strength Index): Measures the speed and magnitude of price movements to identify overbought or oversold conditions.
+
+      -Moving Averages (SMA/EMA): Smooth out short-term fluctuations in price data, providing clearer long-term trends.
+
+      -Others: We may include Bollinger Bands, Stochastic Oscillator, or volume-based indicators if they offer additional predictive power.
+
+2. Window Size & Hyperparameters
+
+      -We experiment with various lookback periods (e.g., 14-day RSI or 12/26-day MACD) based on common technical analysis standards.
+
+      -These parameters can also be tuned during the model training process to find the optimal timeframe for each indicator.
+
+**Sentiment Features**
+
+1. Aggregating Sentiment
+
+      -We take individual VADER scores (positive, negative, neutral, compound) and compute daily or hourly averages to reflect overall market mood.
+
+      -In some cases, weighted average (e.g., weighting sentiment by social media engagement or trading volume) may better capture the influence of major posts or tweets.
+
+2. Combining Multiple Sources
+
+      -If using both Reddit and X (formerly Twitter), we may merge or compare sentiment data to see if one platform provides stronger signals.
+
+      -We can derive composite sentiment scores by blending multiple signals to create a single predictive feature.
+
+**Dimensionality Reduction**
+      -If dealing with high-dimensional sentiment data (e.g., word embeddings, multiple platforms), methods like PCA (Principal Component Analysis) or t-SNE can be applied to condense the feature space.
+      -Reducing complexity may mitigate overfitting and can speed up training without substantially sacrificing predictive accuracy.
+
+By engineering features from both technical indicators and sentiment data, we aim to capture complementary perspectives on market movements. These engineered signals play a crucial rolde in enhancing the performance of our predictive models.

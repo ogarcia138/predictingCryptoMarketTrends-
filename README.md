@@ -271,19 +271,28 @@ Libraries & Frameworks
 Hyperparameters & Configurations
 
    -Logistic Regression:
-       -Typically uses solver='lbfgs' or solver ='saga' for large datasets, with L2 regularization.
+       
+   --Typically uses solver='lbfgs' or solver ='saga' for large datasets, with L2 regularization.
    
       
    -Random Forest:
-        -Key hyperparameters include n_estimators (number of trees) and max_depth
+   
+   
+   --Key hyperparameters include n_estimators (number of trees) and max_depth
    
    
    -XGBoost:
-        -Commonly tuned parameters are learning_rate, n_estimators, max_depth, and colsample_bytree
+   
+   
+   --Commonly tuned parameters are learning_rate, n_estimators, max_depth, and colsample_bytree
    
    
    -Neural Network:
-         -May involve architectures with multiple dense layers, dropout for regularization, batch size, and learning rate.
-         -Optimizers like Adam or SGD are frequently used, along with ReLU activation functions.
+       
+       
+   --May involve architectures with multiple dense layers, dropout for regularization, batch size, and learning rate.
+   
+   
+   --Optimizers like Adam or SGD are frequently used, along with ReLU activation functions.
 
 By employing a diverse set of models-ranging from interpretable (Logistic Regression) to highly flexible (Neural Networks)-the project aims to identify the optimal balance between predictive accuracy, training speed, and interpratibility.

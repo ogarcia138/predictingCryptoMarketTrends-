@@ -296,3 +296,39 @@ Hyperparameters & Configurations
    --Optimizers like Adam or SGD are frequently used, along with ReLU activation functions.
 
 By employing a diverse set of models-ranging from interpretable (Logistic Regression) to highly flexible (Neural Networks)-the project aims to identify the optimal balance between predictive accuracy, training speed, and interpratibility.
+
+# Model Training & Hyperparameter Tuning
+
+**Training Procedure**
+
+1. Data Splitting
+
+      -The dataset is divided into training, validation, and test subjects. Typically, an 80/10/10 or 70/15/15 split is used for balancing training and evaluation.
+
+      -In certain cases, k-fold cross-validation may replace or supplement a fixed split to better estimate out-of-sample performance.
+
+2. Time Series Considerations
+
+      -For price data, we employ walk-forward validation or a rolling window approach to respect the chronological order. This prevents data leakage by ensuring that future data doesn't influence past predictions.
+
+      -The validation set is updated incrementally, aligning with real-world trading scenarios where new data continously arrives.
+
+**Hyperparameter Tuning**
+
+1. Tuning Techniques
+
+      -Grid Search: Explores a predefined parameter (e.g., max_depth in Random Forest, learning_rate in XGBoost).
+
+      -Random Search: Randomly samples a perameter space for faster discovery of good regions.
+
+      -Bayesian Optimization: Uses probabilistic methods to guide the search for optimal hyperparameters, often more efficient than brute-force grid search.
+
+2. Tracking Improvements
+
+      -Performance Metrics: Monitored primarily through metrics like accuracy, precision, recall, F1-score, or ROC-AUC(relevant)
+
+      -Logging & Visualization: Tools such as TensorBoard (for neural networks) or custom logging scripts record how changes in hyperparameters affect model performance over epochs.
+
+      -Iterative Refinement: Promising hyperparameter sets are validated on the seperate test dataset or via cross-validation to confirm that performance gains aren't due to overfitting.
+
+By systematically refining both model architecture and hyperparameters, we aim to balance predictive accuracy, training speed, and generalization. This iterative process helps ensure the final model is both robust and well-tuned for real-world cryptocurrency market predictions.

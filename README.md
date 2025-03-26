@@ -144,3 +144,45 @@ By systematically combining market data (OHLC) and sentiment scores (from VADER)
 
 
 By applying these cleaning, normalization, and sentiment-extraction steps, we create a consistent, high-quality dataset. This ensures our machine learning models can effectively learn patterns and generate reliable predictions for cryptocurrency price movements.
+
+# Exploratory Data Analysis (EDA)
+
+**Initial Insights**
+
+1. Price Trend Visualization
+
+      -We generate line plots of the cryptocurrency's closing prices over time (using libraries like Matplotlib or Plotly)
+
+      -These visualizations help reveal broad trands, volatility patterns, and potential support/resistance levels.
+
+2. Correlation with Technical Indicators
+
+      -Using correlation matrices or scatter plots, we explore how MACD, RSI, or other technical indicators correlate with price movements.
+
+      -This step guides us in identifying which indicators might be most predictive of future price changes.
+
+3. Sentiment vs. Price
+
+      -We overlay or plot sentiment scores (e.g., from VADER) alongside the price charts to see if spikes in positive/negative sentiment align with major price moves.
+
+      -This can offer early insights into how closely sentiment data tracks or foreshadows volatility.
+
+**Statistical Summaries**
+
+1. Descriptive Statistics
+
+      -For price data (OHLC, returns, trading volume) and sentiment variables (positive, negative, neutral scores), we compute standard summary metrics:
+
+      -Mean, Median, Variance, Standard Deviation
+
+      -Min/Max values and Interquartile ranges
+
+      -These metrics provide a baseline understanding of the data's distribution and spread.
+
+2. Outlier Detection & Patterns
+
+      -We may look at box plots or histograms to identify potential outliers in both price and sentiment data.
+
+      -Recognizing outliers (e.g., extreme sentiment spikes or unusually high volume) can guide data cleaning or model weighting.
+
+By combining visual analyses with basic statistical checks, we gain a deeper understanding of our dataset's structure. These EDA findings often inform feature engineering choices and model selection, ensuring we capture the most relevant predictors of cryptocurrency price movements.

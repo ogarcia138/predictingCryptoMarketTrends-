@@ -229,3 +229,51 @@ By combining visual analyses with basic statistical checks, we gain a deeper und
    -Reducing complexity may mitigate overfitting and can speed up training without substantially sacrificing predictive accuracy.
 
 By engineering features from both technical indicators and sentiment data, we aim to capture complementary perspectives on market movements. These engineered signals play a crucial rolde in enhancing the performance of our predictive models.
+
+# Model Selection & Architecture
+
+**Choice of Algorithms**
+
+1. Logistic Regression
+
+      -A straighforward baseline for binary classification with interpretability and relatively low computational cost.
+
+      -Works well on linearly seperable data and can highlight how different features contribute to the prediction (via coefficients).
+
+2. Random Forest
+
+      -Ensemble of decision trees that can handle non-linear relationships and is relatively robut to outliers.
+
+      -Often achieves strong performance with minimal hyperparameter tuning; provides feature importance insights.
+
+3. XGBoost
+
+      -A gradient-boosting framework known for high efficiency and strong performance on tabular data.
+
+      -Handles both linear and non-linear relationships, regularizes more effectively than simpler ensemble methods, and scales well to large datasets.
+
+4. Neural Networks
+
+      -Capable of learning complex, non-linear patterns, especially useful if you have high-dimensional data (e.g., embeddings, multiple sentiment scores).
+
+      -Flexibility in architecture (e.g., fully connected networks, LSTM for time series) can capture intricate market or sentiment relationships.
+
+**Implementation Details**
+
+Libraries & Frameworks
+      -scikit-learn: Used for Logistic Regression, Random Forest, and preliminary data processing (train-test splits, scaling).
+      -XGBoost: Standalone library for a gradient boosting and advanced hyperparameter tuning.
+      -TensorFlow or PyTorch: Implement and train the Neural Network architecture.
+
+Hyperparameters & Configurations
+      -Logistic Regression:
+         -Typically uses solver='lbfgs' or solver ='saga' for large datasets, with L2 regularization.
+      -Random Forest:
+         -Key hyperparameters include n_estimators (number of trees) and max_depth
+      -XGBoost:
+         -Commonly tuned parameters are learning_rate, n_estimators, max_depth, and colsample_bytree
+      -Neural Network:
+         -May involve architectures with multiple dense layers, dropout for regularization, batch size, and learning rate.
+         -Optimizers like Adam or SGD are frequently used, along with ReLU activation functions.
+
+By employing a diverse set of models-ranging from interpretable (Logistic Regression) to highly flexible (Neural Networks)-the project aims to identify the optimal balance between predictive accuracy, training speed, and interpratibility.

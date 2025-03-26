@@ -222,7 +222,10 @@ By combining visual analyses with basic statistical checks, we gain a deeper und
       -We can derive composite sentiment scores by blending multiple signals to create a single predictive feature.
 
 **Dimensionality Reduction**
-      -If dealing with high-dimensional sentiment data (e.g., word embeddings, multiple platforms), methods like PCA (Principal Component Analysis) or t-SNE can be applied to condense the feature space.
-      -Reducing complexity may mitigate overfitting and can speed up training without substantially sacrificing predictive accuracy.
+
+
+   -If dealing with high-dimensional sentiment data (e.g., word embeddings, multiple platforms), methods like PCA (Principal Component Analysis) or t-SNE can be applied to condense the feature space.
+
+   -Reducing complexity may mitigate overfitting and can speed up training without substantially sacrificing predictive accuracy.
 
 By engineering features from both technical indicators and sentiment data, we aim to capture complementary perspectives on market movements. These engineered signals play a crucial rolde in enhancing the performance of our predictive models.

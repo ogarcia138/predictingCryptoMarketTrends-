@@ -261,18 +261,28 @@ By engineering features from both technical indicators and sentiment data, we ai
 **Implementation Details**
 
 Libraries & Frameworks
-      -scikit-learn: Used for Logistic Regression, Random Forest, and preliminary data processing (train-test splits, scaling).
-      -XGBoost: Standalone library for a gradient boosting and advanced hyperparameter tuning.
-      -TensorFlow or PyTorch: Implement and train the Neural Network architecture.
+      
+   -scikit-learn: Used for Logistic Regression, Random Forest, and preliminary data processing (train-test splits, scaling).
+   
+   -XGBoost: Standalone library for a gradient boosting and advanced hyperparameter tuning.
+
+   -TensorFlow or PyTorch: Implement and train the Neural Network architecture.
 
 Hyperparameters & Configurations
-      -Logistic Regression:
-         -Typically uses solver='lbfgs' or solver ='saga' for large datasets, with L2 regularization.
-      -Random Forest:
-         -Key hyperparameters include n_estimators (number of trees) and max_depth
-      -XGBoost:
-         -Commonly tuned parameters are learning_rate, n_estimators, max_depth, and colsample_bytree
-      -Neural Network:
+
+   -Logistic Regression:
+       -Typically uses solver='lbfgs' or solver ='saga' for large datasets, with L2 regularization.
+   
+      
+   -Random Forest:
+        -Key hyperparameters include n_estimators (number of trees) and max_depth
+   
+   
+   -XGBoost:
+        -Commonly tuned parameters are learning_rate, n_estimators, max_depth, and colsample_bytree
+   
+   
+   -Neural Network:
          -May involve architectures with multiple dense layers, dropout for regularization, batch size, and learning rate.
          -Optimizers like Adam or SGD are frequently used, along with ReLU activation functions.
 

@@ -77,9 +77,9 @@ By merging exchange price data with social media sentiment data, this project ai
 
       -Twitter/X's API /Tweepy for streaming or batch retrieval of tweets.  
        
-    VADER for Sentiment:  
+    FinBERT for Sentiment:  
        
-      -After collecting the text data (e.g., tweets, Reddit posts), each entry is passed through          VADER's sentiment analysis engine.  
+      -Used to perform sentiment scoring on the collected text data. FinBERT is a pre-trained transformer model specifically fine-tuned for financial text, providing robust sentiment insights (positive, negative, neutral) that can be particularly valuable for understanding market-related social media content.  
       
       -The resulting sentiment scores (positive, negative, neutral, and compound) are stored alongside the timestamp and relevant cryptocurrency references.  
 

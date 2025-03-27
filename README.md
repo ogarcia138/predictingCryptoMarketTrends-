@@ -52,7 +52,7 @@ This project integrates data from multiple sources to provide both historical an
 3. Sentiment Analysis Tool
 
    
-      -VADER: Used to perform sentiment scoring on the collected text data. Vader is particularly effective for short, social-media style text, providing scores for positive, negative, neutral, and an overall compound sentiment metric.
+      -FinBERT: Used to perform sentiment scoring on the collected text data. Vader is particularly effective for short, social-media style text, providing scores for positive, negative, neutral, and an overall compound sentiment metric.
 
 By merging exchange price data with social media sentiment data, this project aims to capture both objective market signals and subjective investor mood, enabling more nuanced cryptocurrency price predictions.
 
@@ -138,7 +138,8 @@ By systematically combining market data (OHLC) and sentiment scores (from VADER)
 
 2. Model & Libraries
 
-      -VADER (Valance Aware Dictionary and sEntiment Reasoner) is our primary tool for analyzing short social media text.
+      -FinBERT is our primary tool for analyzing financial or market-related text, including short-form social media content. FinBERT, a transformer-based model specifically fine-tuned for finance, provides more context-aware sentiment insights (positive, negative, neutral) compared to general-purpose sentiment analysis tools.
+
 
       -We may optionally compare results from TextBlob or transformer-based models (e.g., BERT) to see if advanced NLP methods improve sentiment accuracy.
 
@@ -211,7 +212,7 @@ By combining visual analyses with basic statistical checks, we gain a deeper und
 
 1. Aggregating Sentiment
 
-      -We take individual VADER scores (positive, negative, neutral, compound) and compute daily or hourly averages to reflect overall market mood.
+      -We take individual FinBERT scores (positive, negative, neutral, compound) and compute daily or hourly averages to reflect overall market mood.
 
       -In some cases, weighted average (e.g., weighting sentiment by social media engagement or trading volume) may better capture the influence of major posts or tweets.
 

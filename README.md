@@ -416,8 +416,10 @@ Pipeling Overview:
 
 
 **Key Findings**
-moz-extension://b1ba2e6f-a825-4fba-bd90-90589299c9fb/assets/orb.svg
+
    1. Best Performing Model...
+   
+   
    2. Impact of Sentiment Data
 
 **Limitations**

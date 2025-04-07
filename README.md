@@ -333,3 +333,48 @@ By employing a diverse set of models-ranging from interpretable (Logistic Regres
       -Iterative Refinement: Promising hyperparameter sets are validated on the seperate test dataset or via cross-validation to confirm that performance gains aren't due to overfitting.
 
 By systematically refining both model architecture and hyperparameters, we aim to balance predictive accuracy, training speed, and generalization. This iterative process helps ensure the final model is both robust and well-tuned for real-world cryptocurrency market predictions.
+
+
+# Model Evaluation #
+
+**Evaluation Metrics**
+   1. Accuracy
+
+      -Represents the proportion of correct predictions (both price up or down) out of the total number of predictions. Useful for a quick overview but can be misleading if the dataset is imbalanced.
+
+   2. Precision & Recall
+
+      -Precision (Positive Predictive Value): Out of all predicted price increases, how many were correct?
+
+      -Recall (True Positive Rate): Out of all actual price increases, how many did we predict correctly?
+
+      -These metrics are especially valuable if misclassifications have different financial implications (e.g., a missed rise vs. a false alarm).
+
+   3. F1-Score
+
+      -The harmonic mean of Precision and Recall, Providing a balanced measure when class distribution is uneven or when both false positives and false negatives are costly.
+
+**Results Comparison**
+Model	               Accuracy	      Precision	      Recall	  F1-Score
+Logistic Regression	   -	              -	            -		    -
+
+
+Random Forest	         -	              -	            -		    -
+
+
+XGBoost	               -	              -	            -		    -
+
+
+Neural Network	         -	              -	            -		    -
+
+1. Performance Insights
+
+      -Summarize which model achieved the highest accuracy or balanced metrics
+
+2. Trade-Offs
+
+     -Speed vs. Accuracy: Some models(e.g., Random Forest) may train quickly but offer slightly lower accuracy, while Neural Networks might be more computationally expensive yet capture deeper patterns.
+
+      -Overfitting Concerns: If a model exhibits strong performance on the training set but weaker performance on the test set, it may be overfitting. Techniques like cross-validation or regularization can mitigate this.
+
+   By systematically comparing these metrics, we ensure a transparent and data-driven approach to selecting the final model for cryptocurrency price prediction.

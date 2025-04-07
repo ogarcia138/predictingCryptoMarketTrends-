@@ -404,10 +404,31 @@ Pipeling Overview:
    2. Preprocessing: Apply text cleaning, scale numerical features, and run FinBERT for sentiment analysis on incoming social media data.
 
 
-   3. Model Inference: Feed the latest batch of cleaned, feature-engineered data into the trained model(s) to generate immediate predictions (price up or price down)
+   3. Modelf Inference: Feed the latest batch of cleaned, feature-engineered data into the trained model(s) to generate immediate predictions (price up or price down)
 
 
    4. Output & Visualization: Results are either logged to a database, displayed on a dashboard, or served via an API endpoint for consumption by external applications.
 
 
  By automating each step, we maintain a seamless flow from data collection to actionable price predictions, minimizing both manual intervention and model staleness.
+
+# Conclusions #
+
+
+**Key Findings**
+moz-extension://b1ba2e6f-a825-4fba-bd90-90589299c9fb/assets/orb.svg
+   1. Best Performing Model...
+   2. Impact of Sentiment Data
+
+**Limitations**
+
+   1. Data Constraints
+
+
+      -Limited historical data or coverage of only specific cryptocurrencies may narrow the model's applicability.
+
+      -Social media sentiment can be skewed by bot activity, duplicate posts, or spam.
+
+   2. Real-time Alignment.
+
+      -Synchronizing price updates with sentiment data can be challenging, especially when posts are time-stamped in different time zones or at irregular intervals

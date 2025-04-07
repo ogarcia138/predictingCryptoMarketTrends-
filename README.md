@@ -357,7 +357,7 @@ By systematically refining both model architecture and hyperparameters, we aim t
 **Results Comparison**
 
 
-Model	                    Accuracy	           Precision	           Recall	       F1-Score
+Model'               'Accuracy'               'Precision'               'Recall'               'F1-Score
 
 
 Logistic Regression	  

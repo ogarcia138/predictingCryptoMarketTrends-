@@ -381,3 +381,33 @@ Neural Network: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
       -Overfitting Concerns: If a model exhibits strong performance on the training set but weaker performance on the test set, it may be overfitting. Techniques like cross-validation or regularization can mitigate this.
 
    By systematically comparing these metrics, we ensure a transparent and data-driven approach to selecting the final model for cryptocurrency price prediction.
+
+# Deployment Pipeline #
+
+
+**Real-time Data Flow**
+
+Continuous Data Fetching:
+       
+   
+   -Python scripts (or scheduled jobs) regularly query the Kraken API for updated price data and the Reddit/X API's for new posts and tweets.
+
+   
+   -This ensures the model always has access to the latest market movements and sentiment signals.
+
+
+Pipeling Overview: 
+
+   1. Data Ingestion: Collect new OHLC prices, volume, and social media text in real time.
+
+
+   2. Preprocessing: Apply text cleaning, scale numerical features, and run FinBERT for sentiment analysis on incoming social media data.
+
+
+   3. Model Inference: Feed the latest batch of cleaned, feature-engineered data into the trained model(s) to generate immediate predictions (price up or price down)
+
+
+   4. Output & Visualization: Results are either logged to a database, displayed on a dashboard, or served via an API endpoint for consumption by external applications.
+
+
+ By automating each step, we maintain a seamless flow from data collection to actionable price predictions, minimizing both manual intervention and model staleness.

@@ -432,3 +432,14 @@ moz-extension://b1ba2e6f-a825-4fba-bd90-90589299c9fb/assets/orb.svg
    2. Real-time Alignment.
 
       -Synchronizing price updates with sentiment data can be challenging, especially when posts are time-stamped in different time zones or at irregular intervals
+
+
+      -API rate limits or network delays might introduce small gaps in real-time data flow, potentially affecting immediate predictions.
+
+
+   3. Computational Costs
+
+
+         -Running multiple models or large neural networks (plus FinBERT for sentiment) can be resource-intensive, particularly in a real-time setting with tight latency requirements
+
+      

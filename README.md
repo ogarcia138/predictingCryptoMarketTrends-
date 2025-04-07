@@ -357,19 +357,19 @@ By systematically refining both model architecture and hyperparameters, we aim t
 **Results Comparison**
 
 
-Model	                 Accuracy	        Precision	        Recall	    F1-Score
+Model	                    Accuracy	           Precision	           Recall	       F1-Score
 
 
-Logistic Regression	   -	                -	              -		      -
+Logistic Regression	  
 
 
-Random Forest	         -	                -	              -		      -
+Random Forest	         
 
 
-XGBoost	               -	                -	              -		      -
+XGBoost	              
 
 
-Neural Network	         -	                -	              -		      -
+Neural Network	        
 
 1. Performance Insights
 

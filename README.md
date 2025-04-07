@@ -360,16 +360,16 @@ By systematically refining both model architecture and hyperparameters, we aim t
 &nbsp;&nbsp;&nbsp;&nbsp;Model&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Accuracy&nbsp;&nbsp;&nbsp;&nbsp;Precision&nbsp;&nbsp;&nbsp;&nbsp;Recall&nbsp;&nbsp;&nbsp;&nbsp;F1-Score
 
 
-Logistic Regression	  
+Logistic Regression:	  
 
 
-Random Forest	         
+Random Forest:	         
 
 
-XGBoost	              
+XGBoost:         
 
 
-Neural Network	        
+Neural Network:        
 
 1. Performance Insights
 
